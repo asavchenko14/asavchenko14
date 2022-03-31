@@ -1,0 +1,379 @@
+html { 
+        
+        }
+body{
+    font-family: Arial, sans-serif;
+        }
+nav{
+	width: 100%;
+	height: 60px;
+	background: #344051;
+}
+.logo{
+	color: #fff;
+	font-size: 28px;
+	line-height: 60px;
+	padding-left: 344px;
+	float: left;
+}
+.menu{
+	float: left;
+	padding-left: 300px;
+        }
+.menu li{
+	float: left;
+	line-height: 60px;
+	color: #fff;
+	margin-right: 40px;
+	font-size: 16px;
+	text-transform: uppercase;
+} 
+.main{
+	width: 100%;
+	height: calc(100% - 60px);
+	background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/fon_obo_mne.png) center/cover no-repeat;	
+}
+.title{
+	float: left;
+	margin: 432px 0px 0px 404px;
+	color: #2c384a;
+	text-align: center;
+}
+.title h1{
+	font-size: 60px;
+	font-weight: bold;
+}
+.title h4{
+	margin-top: 40px;
+	font-size: 22px;
+	color: #79818d;
+}
+.title input{
+	height: 40px;
+	text-align: center;
+	border: 2px solid #6b7682;
+	border-radius: 5px;
+	padding: 0px 16px;
+	background: none;
+	color: #6b7682;
+	font-size: 13px;
+	margin: 50px 14px 0px 14px;
+}
+.ya{
+	width: 100%;
+	text-align: center;
+	
+}
+.ya h2{
+	text-transform: uppercase;
+	margin-top: 108px;
+	padding-bottom: 34px;
+	font-size: 45px;
+	font-weight: bold;
+	background: url(../img/cherta.png) 50% 310%/10% 70% no-repeat;
+}
+.ya img{
+	margin-top: 97px;
+	margin-bottom: 23px;	
+}
+.ya p{
+	color: #3f495a;
+	margin: 0px 550px 44px 550px ;
+	text-align: start;
+	font-size: 14px;
+}
+.ya input{
+	height: 40px;
+	text-align: center;
+	border: 2px solid #3f495a;
+	border-radius: 5px;
+	padding: 0px 16px;
+	background: none;
+	color: #3f495a;
+	font-size: 13px;
+	margin-bottom: 100px;
+}
+.col{
+	background: url(../img/fon_ya.png) center/cover no-repeat;
+	height: 523px;
+}
+.col h2{
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 108px;
+	padding-bottom: 34px;
+	font-size: 45px;
+	font-weight: bold;
+	background: url(../img/cherta.png) 50% 320%/10% 70% no-repeat;
+}
+.col1{
+	margin: 109px 360px 97px 400px; /*верхнего, правого, нижнего и левого*/
+}
+.col2 {
+	margin: 0px 44px 0px 44px;
+	padding: 0;
+	text-align: center;
+	display: inline-block;
+	width: 17%
+            }
+.col2 h4{
+	margin-top: 43px;
+	margin-bottom: 23px;
+	font-size: 22px;
+	color: #d58c41;
+}
+.col2 p{
+	font-size: 14px;
+	color: #3f495a;
+}
+.kay{
+	width: 100%;
+        }
+.kay1 h2{
+	text-align: center;
+	margin-top: 108px;
+	padding-bottom: 34px;
+	font-size: 45px;
+	font-weight: bold;
+	background: url(../img/cherta.png) 50% 310%/10% 70% no-repeat;
+}
+.kay1 p{
+	text-align: center;
+	font-size: 14px;
+	color: #4d5664;
+	margin-top: 39px;
+	margin-bottom: 40px;
+}
+.kay1 img{
+	margin-left: 388px;
+	margin-right: 384px;
+	
+}
+.kay2{
+     display: inline-block;
+	margin-left: 388px;
+	margin-right: 15px;
+	float: left;
+        }
+.kay3{
+	margin-top: 10px;
+}
+.kay3 h4{
+	font-size: 22px;
+	padding-bottom: 15px;
+	font-weight: bold;
+	color: #4d5664;
+}
+.kay3 span{
+	font-size: 14px;
+	color: #4d5664;
+}
+.kay3 input{
+	height: 40px;
+	text-align: center;
+	border: 2px solid #3f495a;
+	border-radius: 5px;
+	padding: 0px 16px;
+	background: none;
+	color: #3f495a;
+	font-size: 13px;
+	margin-top: 15px;
+	margin-bottom: 100px;
+}
+.projekt{
+    margin-top: 70px;
+        }
+.projekt h3{
+	font-size: 22px;
+	padding-bottom: 9px;
+	font-weight: bold;
+	color: #4d5664;
+}
+.projekt p{
+	color: #4d5664;
+	font-size: 14px;
+	margin-top: 10px;
+	padding-right: 364px
+}
+
+.raschet{
+    display: inline-block;
+	width: 100%
+        }
+.raschet h2{
+	text-align: center;
+	margin-top: 100px;
+	font-size: 45px;
+	font-weight: bold;
+	
+}
+.raschet img{
+	margin: 0px 536px 0px 491px;
+}
+.ras1{
+    margin: 61px 536px 43px 491px; /*верхнего, правого, нижнего и левого*/
+	
+        }
+.ras1 h3{
+	text-transform: uppercase;
+    font-size: 20px;
+	padding-bottom: 10px;
+        }
+.ras1 select{
+	text-align: start;
+	font-size: 14px;
+	color: #a2a2a2;
+	background: #eeeeee;
+	margin: 0;
+	padding: 10px 835px 10px 0px;
+}
+.ras2{
+    margin: 28px 536px 43px 491px;
+        }
+.ras2 h3{
+	font-size: 20px;
+	padding-bottom: 10px;
+	margin: 0;
+}
+.ras3{
+	margin-left: 95%;
+	padding: 0;
+}
+.ras4{
+	margin-left: 90%;
+	padding: 0;
+}
+.stat{
+    margin: 0;
+	padding: 0;
+	background: url(../img/fon_stat.png) center/cover no-repeat;
+	height: 495px;
+        }
+.stat h2{
+	text-transform: uppercase;
+    text-align: center;
+	margin-top: 20px;
+	padding-bottom: 34px;
+	font-size: 45px;
+	font-weight: bold;
+	background: url(../img/cherta.png) 50% 310%/10% 70% no-repeat;
+        }
+.stat1{
+	margin: 91px 458px 103px 443px; /*верхнего, правого, нижнего и левого*/
+	text-align: center;
+}
+.stat2{
+	margin: 0px 38px 0px 39px;/*верхнего, правого, нижнего и левого*/
+	padding: 0;
+	text-align: center;
+	display: inline-block;
+	width: 17%
+}
+.stat2 img{
+	margin-bottom: 34px;
+	padding: 0;
+}
+.stat2 h4{
+	font-size: 11px;
+	color: #323e4f;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.stat2 p{
+	font-size: 26px;
+	font-weight: bold;
+	margin-bottom: 31px;
+	color: #323e4f;
+	text-transform: uppercase;
+}
+.otziv{
+    height: 594px;
+	text-align: center;
+	padding-top: 60px;
+        }
+.otziv1 h2{
+	text-transform: uppercase;
+    text-align: center;
+	margin-top: 20px;
+	padding-bottom: 34px;
+	font-size: 45px;
+	font-weight: bold;
+	background: url(../img/cherta.png) 50% 310%/10% 70% no-repeat;   
+        }
+.otziv1 img{
+	margin: 61px 0px 37px 0px;/*верхнего, правого, нижнего и левого*/
+}
+.otziv2{
+    color: #243042;
+	font-size: 14px;
+        }
+.otziv3{
+    margin-top: 54px;
+        }
+.kont{
+    background:url(/img/fon_kontakt.png) center/cover no-repeat;
+    color:#F0F0F0;
+	height: 811px;
+        }
+.kont1 h2{
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 20px;
+	padding-bottom: 34px;
+	font-size: 45px;
+	font-weight: bold;
+	background: url(../img/cherta.png) 50% 310%/10% 70% no-repeat;
+}
+.kont1 p{
+	margin: 31px 0px 48px 0px;/*верхнего, правого, нижнего и левого*/
+	font-size: 14px;
+	text-align: center;
+}
+.kont2{
+    margin: 91px 458px 103px 443px; /*верхнего, правого, нижнего и левого*/
+	text-align: center;    
+        }
+.kont3{
+    margin: 0px 38px 0px 39px;/*верхнего, правого, нижнего и левого*/
+	padding: 0;
+	text-align: center;
+	display: inline-block;
+	width: 17%
+        }
+.kont3 img{
+	margin-bottom: 13px;
+	padding: 0;
+}
+.kont3 p{
+	font-size: 12px;
+}
+.kont4{
+    text-align: center;
+        }
+.kont4 h2{
+	text-transform: uppercase;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.kont5{  
+    text-align: center;
+        }
+.kont5 input{
+	height: 36px;
+	width: 354px;
+}
+.kont5 textarea{
+	width: 708px;
+}
+.kont6{
+	height: 40px;
+	text-align: center;
+	border: 2px solid #F0F0F0;
+	border-radius: 5px;
+	padding: 0;
+	background: none;
+	color: #F0F0F0;
+	font-size: 14px;
+	margin-top: 15px;
+	margin-bottom: 76px
+}
