@@ -100,7 +100,7 @@ nav{
 .col h2{
 	text-transform: uppercase;
 	text-align: center;
-	margin-top: 108px;
+	padding-top: 108px;
 	padding-bottom: 34px;
 	font-size: 45px;
 	font-weight: bold;
@@ -252,7 +252,7 @@ nav{
 .stat h2{
 	text-transform: uppercase;
     text-align: center;
-	margin-top: 20px;
+	padding-top: 20px;
 	padding-bottom: 34px;
 	font-size: 45px;
 	font-weight: bold;
@@ -318,7 +318,7 @@ nav{
 .kont1 h2{
 	text-transform: uppercase;
 	text-align: center;
-	margin-top: 20px;
+	padding-top: 20px;
 	padding-bottom: 34px;
 	font-size: 45px;
 	font-weight: bold;
