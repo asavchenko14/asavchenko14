@@ -157,7 +157,7 @@ nav{
 	transform: scale(1.1);
 }
 .col{
-	background: url(../img/fon_ya.png) center/cover no-repeat;
+	background: url(../img/fon_ya.png) center/cover no-repeat fixed;
 	height: 523px;
 }
 .col h2{
