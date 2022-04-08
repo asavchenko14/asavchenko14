@@ -199,18 +199,7 @@ nav{
 	display: inline-block;
 	width: 16.5%;
 }
-@keyframes col2{
-	from{
-		opacity: 0;
-		margin-left: -300px;
-		
-	}
-	to{
-		opacity: 1;
-	}
 .col2 img{
-}
-	
 	-webkit-animation: col2 0.7s ease-in-out
  forwards;
 	-o-animation: col2 0.7s ease-in-out
@@ -532,6 +521,15 @@ nav{
 .kont6:active{
 	transform: scale(1.1);
 }
+@keyframes col2{
+	from{
+		opacity: 0;
+		margin-left: -300px;
+		
+	}
+	to{
+		opacity: 1;
+	}
 @keyframes titlemove{
 	from{
 		opacity: 0;
