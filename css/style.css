@@ -1,6 +1,3 @@
-html { 
-        
-        }
 body{
     font-family: Arial, sans-serif;
         }
@@ -8,6 +5,7 @@ nav{
 	width: 100%;
 	height: 60px;
 	background: #344051;
+	position: fixed;
 }
 .logo{
 	color: #fff;
@@ -15,7 +13,19 @@ nav{
 	line-height: 60px;
 	padding-left: 344px;
 	float: left;
+	-webkit-animation: comming 2s ease;
+	-o-animation: comming 2s ease;
+	animation: comming 2s ease;
 }
+@keyframes comming{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
 .menu{
 	float: left;
 	padding-left: 300px;
@@ -27,28 +37,78 @@ nav{
 	margin-right: 40px;
 	font-size: 16px;
 	text-transform: uppercase;
+	-webkit-animation: topshift 0.4s ease forwards;
+	-o-animation: topshift 0.4s ease forwards;
+	animation: topshift 0.4s ease forwards;
+	opacity: 0;
 } 
-.main{
-	width: 100%;
-	height: calc(100% - 60px);
-	background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/fon_obo_mne.png) center/cover no-repeat;	
+.menu li:nth-child(2){
+	animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+	animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+	animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+	animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+	animation-delay: 2s;
+}
+.menu li a{
+	transition: all 0.1s;
+	color: white;
+	transform: scale(1);
+	display: inline-block;
+}
+.menu li a:visited{
+	color: white;
+}
+.menu li a:hover{
+	color: #e88604;
+	
+}
+.menu li a:active{
+	transform: scale(1.1);
+}
+@keyframes topshift{
+	from{
+		opacity: 0;
+		margin: -80px;
+	}
+	to{
+		opacity: 1;
+		margin-top: 0px;
+	}
 }
 .title{
+	width: 100%;
+	height: 100%;
+	background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/fon_obo_mne.png) center/cover no-repeat;	
+	
+}
+.titles{
 	float: left;
-	margin: 432px 0px 0px 404px;
+	margin: 432px 0px 0px 404px; /*верхнего, правого, нижнего и левого*/
 	color: #2c384a;
 	text-align: center;
+	-webkit-animation: titlemove 1s ease forwards;
+	-o-animation: titlemove 1s ease forwards;
+	animation: titlemove 1s ease forwards;
+	opacity: 0;
 }
-.title h1{
+.titles h1{
 	font-size: 60px;
 	font-weight: bold;
 }
-.title h4{
+.titles h4{
 	margin-top: 40px;
 	font-size: 22px;
 	color: #79818d;
 }
-.title input{
+.titles input{
 	height: 40px;
 	text-align: center;
 	border: 2px solid #6b7682;
@@ -58,6 +118,15 @@ nav{
 	color: #6b7682;
 	font-size: 13px;
 	margin: 50px 14px 0px 14px;
+	transition: all 0.2s;
+	transform: scale(1);
+}
+.titles input:hover{
+	background: #344051;
+	color: white;
+}
+.titles input:active{
+	transform: scale(1.1);
 }
 .ya{
 	width: 100%;
@@ -71,6 +140,9 @@ nav{
 	font-size: 45px;
 	font-weight: bold;
 	background: url(../img/cherta.png) 50% 310%/10% 70% no-repeat;
+	-webkit-animation: comming 2s ease;
+	-o-animation: comming 2s ease;
+	animation: comming 2s ease;
 }
 .ya img{
 	margin-top: 97px;
@@ -92,6 +164,15 @@ nav{
 	color: #3f495a;
 	font-size: 13px;
 	margin-bottom: 100px;
+	transition: all 0.2s;
+	transform: scale(1);
+}
+.ya input:hover{
+	background: #344051;
+	color: white;
+}
+.ya input:active{
+	transform: scale(1.1);
 }
 .col{
 	background: url(../img/fon_ya.png) center/cover no-repeat;
@@ -105,30 +186,60 @@ nav{
 	font-size: 45px;
 	font-weight: bold;
 	background: url(../img/cherta.png) 50% 320%/10% 70% no-repeat;
+	-webkit-animation: comming 2s ease;
+	-o-animation: comming 2s ease;
+	animation: comming 2s ease;
 }
 .col1{
 	margin: 109px 360px 97px 400px; /*верхнего, правого, нижнего и левого*/
 }
 .col2 {
 	margin: 0px 44px 0px 44px;
-	padding: 0;
 	text-align: center;
 	display: inline-block;
-	width: 16.5%
-            }
+	width: 16.5%;
+}
+@keyframes col2{
+	from{
+		opacity: 0;
+		margin-left: -300px;
+		
+	}
+	to{
+		opacity: 1;
+	}
+.col2 img{
+}
+	
+	-webkit-animation: col2 0.7s ease-in-out
+ forwards;
+	-o-animation: col2 0.7s ease-in-out
+ forwards;
+	animation: col2 0.7s ease-in-out
+ forwards;
+	opacity: 0;
+}
 .col2 h4{
-	margin-top: 43px;
-	margin-bottom: 23px;
-	font-size: 22px;
+	margin-top: 36px;
+	margin-bottom: 16px;
+	font-size: 20px;
 	color: #d58c41;
+	-webkit-animation: col2 1.2s ease forwards;
+	-o-animation: col2 1.2s ease forwards;
+	animation: col2 1.2s ease forwards;
+	opacity: 0;
 }
 .col2 p{
 	font-size: 14px;
 	color: #3f495a;
+	-webkit-animation: col2 1.7s ease forwards;
+	-o-animation: col2 1.7s ease forwards;
+	animation: col2 1.7s ease forwards;
+	opacity: 0;
 }
 .kay{
 	width: 100%;
-        }
+	}
 .kay1 h2{
 	text-align: center;
 	margin-top: 108px;
@@ -136,6 +247,9 @@ nav{
 	font-size: 45px;
 	font-weight: bold;
 	background: url(../img/cherta.png) 50% 310%/10% 70% no-repeat;
+	-webkit-animation: comming 2s ease;
+	-o-animation: comming 2s ease;
+	animation: comming 2s ease;
 }
 .kay1 p{
 	text-align: center;
@@ -179,6 +293,15 @@ nav{
 	font-size: 13px;
 	margin-top: 15px;
 	margin-bottom: 100px;
+	transition: all 0.2s;
+	transform: scale(1);
+}
+.kay3 input:hover{
+	background: #344051;
+	color: white;
+}
+.kay3 input:active{
+	transform: scale(1.1);
 }
 .projekt{
     margin-top: 70px;
@@ -193,19 +316,21 @@ nav{
 	color: #4d5664;
 	font-size: 14px;
 	margin-top: 10px;
-	padding-right: 364px
+	padding-right: 364px;
 }
 
 .raschet{
     display: inline-block;
-	width: 100%
+	width: 100%;
         }
 .raschet h2{
 	text-align: center;
 	margin-top: 100px;
 	font-size: 45px;
 	font-weight: bold;
-	
+	-webkit-animation: comming 2s ease;
+	-o-animation: comming 2s ease;
+	animation: comming 2s ease;
 }
 .raschet img{
 	margin: 0px 536px 0px 491px;
@@ -257,6 +382,9 @@ nav{
 	font-size: 45px;
 	font-weight: bold;
 	background: url(../img/cherta.png) 50% 310%/10% 70% no-repeat;
+	-webkit-animation: comming 2s ease;
+	-o-animation: comming 2s ease;
+	animation: comming 2s ease;
         }
 .stat1{
 	margin: 91px 458px 103px 443px; /*верхнего, правого, нижнего и левого*/
@@ -267,17 +395,15 @@ nav{
 	padding: 0;
 	text-align: center;
 	display: inline-block;
-	width: 16.5%
+	width: 16.5%;
 }
 .stat2 img{
 	margin-bottom: 34px;
 	padding: 0;
-}
-.stat2 h4{
-	font-size: 11px;
-	color: #323e4f;
-	text-transform: uppercase;
-	font-weight: bold;
+	-webkit-animation: col2 1.2s ease forwards;
+	-o-animation: col2 1.2s ease forwards;
+	animation: col2 1.2s ease forwards;
+	opacity: 0;
 }
 .stat2 p{
 	font-size: 26px;
@@ -285,6 +411,20 @@ nav{
 	margin-bottom: 31px;
 	color: #323e4f;
 	text-transform: uppercase;
+	-webkit-animation: col2 1.7s ease forwards;
+	-o-animation: col2 1.7s ease forwards;
+	animation: col2 1.7s ease forwards;
+	opacity: 0;
+}
+.stat2 h4{
+	font-size: 11px;
+	color: #323e4f;
+	text-transform: uppercase;
+	font-weight: bold;
+	-webkit-animation: col2 2s ease forwards;
+	-o-animation: col2 2s ease forwards;
+	animation: col2 2s ease forwards;
+	opacity: 0;
 }
 .otziv{
     height: 594px;
@@ -298,7 +438,10 @@ nav{
 	padding-bottom: 34px;
 	font-size: 45px;
 	font-weight: bold;
-	background: url(../img/cherta.png) 50% 310%/10% 70% no-repeat;   
+	background: url(../img/cherta.png) 50% 310%/10% 70% no-repeat; 
+	-webkit-animation: comming 2s ease;
+	-o-animation: comming 2s ease;
+	animation: comming 2s ease;
         }
 .otziv1 img{
 	margin: 61px 0px 37px 0px;/*верхнего, правого, нижнего и левого*/
@@ -323,6 +466,9 @@ nav{
 	font-size: 45px;
 	font-weight: bold;
 	background: url(../img/cherta.png) 50% 310%/10% 70% no-repeat;
+	-webkit-animation: comming 2s ease;
+	-o-animation: comming 2s ease;
+	animation: comming 2s ease;
 }
 .kont1 p{
 	margin: 31px 0px 48px 0px;/*верхнего, правого, нижнего и левого*/
@@ -375,5 +521,23 @@ nav{
 	color: #F0F0F0;
 	font-size: 14px;
 	margin-top: 15px;
-	margin-bottom: 76px
+	margin-bottom: 76px;
+	transition: all 0.2s;
+	transform: scale(1);
 }
+.kont6:hover{
+	background: #344051;
+	color: #F0F0F0;
+}
+.kont6:active{
+	transform: scale(1.1);
+}
+@keyframes titlemove{
+	from{
+		opacity: 0;
+		margin-left: -500px;
+	}
+	to{
+		opacity: 1;
+		margin-left: 404px;
+	}
