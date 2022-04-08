@@ -342,7 +342,7 @@ nav{
 .stat{
     margin: 0;
 	padding: 0;
-	background: url(../img/fon_stat.png) center/cover no-repeat;
+	background: url(../img/fon_stat.png) center/cover no-repeat fixed;
 	height: 495px;
         }
 .stat h2{
