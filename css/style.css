@@ -6,12 +6,12 @@ nav{
 	height: 60px;
 	background: #344051;
 	position: fixed;
+	z-index: 10;
 }
 .logo{
-	color: #fff;
-	font-size: 28px;
+	color: white;
+	font-size: 20px;
 	line-height: 60px;
-	padding-left: 344px;
 	float: left;
 	-webkit-animation: comming 2s ease;
 	-o-animation: comming 2s ease;
@@ -19,14 +19,13 @@ nav{
 }
 .menu{
 	float: left;
-	padding-left: 300px;
         }
 .menu li{
 	float: left;
 	line-height: 60px;
 	color: #fff;
 	margin-right: 40px;
-	font-size: 16px;
+	font-size: 14px;
 	text-transform: uppercase;
 	-webkit-animation: topshift 0.4s ease forwards;
 	-o-animation: topshift 0.4s ease forwards;
@@ -53,6 +52,7 @@ nav{
 	color: white;
 	transform: scale(1);
 	display: inline-block;
+	text-decoration: none;
 }
 .menu li a:visited{
 	color: white;
@@ -64,33 +64,45 @@ nav{
 .menu li a:active{
 	transform: scale(1.1);
 }
-.title{
+.btn{
+	color: white;
+	font-size: 20px;
+}
+.btn:hover{
+	color: white;
+}
+.dropdown-item a{
+	font-size: 20px;
+	text-decoration: none;
+}
+.main{
 	width: 100%;
 	height: 100%;
 	background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/fon_obo_mne.png) center/cover no-repeat;	
 	
 }
-.titles{
+.title{
 	float: left;
-	margin: 432px 0px 0px 404px; /*верхнего, правого, нижнего и левого*/
 	color: #2c384a;
 	text-align: center;
+	width: 100%;
 	-webkit-animation: titlemove 1s ease forwards;
 	-o-animation: titlemove 1s ease forwards;
 	animation: titlemove 1s ease forwards;
 	opacity: 0;
 	
 }
-.titles h1{
-	font-size: 60px;
+.title h1{
+	font-family: Arial, sans-serif;
+	font-size: 65px;
 	font-weight: bold;
 }
-.titles h4{
-	margin-top: 40px;
+.title h4{
+	margin-top: 20px;
 	font-size: 22px;
 	color: #79818d;
 }
-.titles input{
+.title input{
 	height: 40px;
 	text-align: center;
 	border: 2px solid #6b7682;
@@ -103,21 +115,45 @@ nav{
 	transition: all 0.2s;
 	transform: scale(1);
 }
-.titles input:hover{
+.title input:hover{
 	background: #344051;
 	color: white;
 }
-.titles input:active{
+.title input:active{
 	transform: scale(1.1);
 }
+@media (max-width: 991px){
+	.title, .title h4, .title input{
+		color: white;
+		position: relative;
+		z-index: 3;
+	}
+	.title h4, .title input{
+		font-size: 20px;
+	}
+	.title input{
+		border-color: white;
+	}
+	.main{
+		position: relative;
+	}
+	.main::after{
+		content: "";
+		bottom: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		position: absolute;
+		background: rgba(0,0,0,0.4);
+		z-index: 1;
+	}
+}
 .ya{
-	width: 100%;
 	text-align: center;
-	
 }
 .ya h2{
 	text-transform: uppercase;
-	margin-top: 108px;
+	margin-top: 2%;
 	padding-bottom: 34px;
 	font-size: 45px;
 	font-weight: bold;
@@ -127,12 +163,14 @@ nav{
 	animation: comming 2s ease;
 }
 .ya img{
-	margin-top: 97px;
-	margin-bottom: 23px;	
+	text-align: center;
+	height: 10%;
+	width: 25%;
+	padding-top: 2%;
+	padding-bottom: 2%;
 }
 .ya p{
 	color: #3f495a;
-	margin: 0px 550px 44px 550px ;
 	text-align: start;
 	font-size: 14px;
 }
@@ -145,7 +183,7 @@ nav{
 	background: none;
 	color: #3f495a;
 	font-size: 13px;
-	margin-bottom: 100px;
+	margin-bottom: 3%;
 	transition: all 0.2s;
 	transform: scale(1);
 }
@@ -158,13 +196,13 @@ nav{
 }
 .col{
 	background: url(../img/fon_ya.png) center/cover no-repeat fixed;
-	height: 523px;
+	padding: 5% 0% 5% 0;
 }
 .col h2{
 	text-transform: uppercase;
 	text-align: center;
-	padding-top: 108px;
-	padding-bottom: 34px;
+	padding-top: 1%;
+	padding-bottom: 2%;
 	font-size: 45px;
 	font-weight: bold;
 	background: url(../img/cherta.png) 50% 320%/10% 70% no-repeat;
@@ -173,13 +211,13 @@ nav{
 	animation: comming 2s ease;
 }
 .col1{
-	margin: 109px 360px 97px 400px; /*верхнего, правого, нижнего и левого*/
-}
-.col2 {
-	margin: 0px 44px 0px 44px;
+	padding-top: 1%;
 	text-align: center;
 	display: inline-block;
-	width: 16.5%;
+}
+.col2{
+	padding-left: 1%;
+	padding-right: 1%;
 }
 .col2 img{
 	-webkit-animation: col2 0.7s ease-in-out
@@ -209,12 +247,12 @@ nav{
 	opacity: 0;
 }
 .kay{
-	width: 100%;
+	text-align: center;
+	display: inline-block;
 	}
 .kay1 h2{
-	text-align: center;
-	margin-top: 108px;
-	padding-bottom: 34px;
+	margin-top: 1%;
+	padding-bottom: 2%;
 	font-size: 45px;
 	font-weight: bold;
 	background: url(../img/cherta.png) 50% 310%/10% 70% no-repeat;
@@ -223,25 +261,14 @@ nav{
 	animation: comming 2s ease;
 }
 .kay1 p{
-	text-align: center;
 	font-size: 14px;
 	color: #4d5664;
 	margin-top: 39px;
 	margin-bottom: 40px;
 }
-.kay1 img{
-	margin-left: 388px;
-	margin-right: 384px;
-	
-}
-.kay2{
-     display: inline-block;
-	margin-left: 388px;
-	margin-right: 15px;
-	float: left;
-        }
 .kay3{
-	margin-top: 10px;
+	padding-top: 10px;
+	float:left;
 }
 .kay3 h4{
 	font-size: 22px;
@@ -275,26 +302,28 @@ nav{
 	transform: scale(1.1);
 }
 .projekt{
-    margin-top: 70px;
+    margin-top: 0%;
         }
-.projekt h3{
+.projekt h4{
+	text-align: start;
 	font-size: 22px;
-	padding-bottom: 9px;
+	padding-top: 10px;
+	padding-bottom: 15px;
 	font-weight: bold;
 	color: #4d5664;
 }
 .projekt p{
+	text-align: start;
 	color: #4d5664;
-	font-size: 14px;
-	margin-top: 10px;
-	padding-right: 364px;
+	font-size: 14px;	
 }
 
 .raschet{
-    display: inline-block;
-	width: 100%;
+    background: url(../img/fon-raschet.jpg) center/cover no-repeat fixed;
+	
         }
 .raschet h2{
+	color:#303030;
 	text-align: center;
 	margin-top: 100px;
 	font-size: 45px;
@@ -303,14 +332,11 @@ nav{
 	-o-animation: comming 2s ease;
 	animation: comming 2s ease;
 }
-.raschet img{
-	margin: 0px 536px 0px 491px;
-}
 .ras1{
-    margin: 61px 536px 43px 491px; /*верхнего, правого, нижнего и левого*/
-	
+    margin: 2.5% 2.5% 2.5% 2.5%; /*верхнего, правого, нижнего и левого*/
         }
 .ras1 h3{
+	color:#303030;
 	text-transform: uppercase;
     font-size: 20px;
 	padding-bottom: 10px;
@@ -318,32 +344,31 @@ nav{
 .ras1 select{
 	text-align: start;
 	font-size: 14px;
-	color: #a2a2a2;
+	color: #727272;
 	background: #eeeeee;
 	margin: 0;
-	padding: 10px 835px 10px 0px;
+	padding: 1% 67% 1% 0%;
 }
 .ras2{
-    margin: 28px 536px 43px 491px;
+    margin: 2.5% 2.5% 2.5% 2.5%;
         }
 .ras2 h3{
+	color:#000000;
 	font-size: 20px;
 	padding-bottom: 10px;
 	margin: 0;
 }
 .ras3{
-	margin-left: 95%;
+	margin-left: 67%;
 	padding: 0;
 }
 .ras4{
-	margin-left: 90%;
+	margin-left: 63.5%;
 	padding: 0;
 }
 .stat{
-    margin: 0;
-	padding: 0;
 	background: url(../img/fon_stat.png) center/cover no-repeat fixed;
-	height: 495px;
+	padding: 5% 0% 5% 0%; /*верхнего, правого, нижнего и левого*/
         }
 .stat h2{
 	text-transform: uppercase;
@@ -358,7 +383,7 @@ nav{
 	animation: comming 2s ease;
         }
 .stat1{
-	margin: 91px 458px 103px 443px; /*верхнего, правого, нижнего и левого*/
+	padding: 5% 0% 0% 0%; /*верхнего, правого, нижнего и левого*/
 	text-align: center;
 }
 .stat2{
@@ -398,15 +423,14 @@ nav{
 	opacity: 0;
 }
 .otziv{
-    height: 594px;
 	text-align: center;
-	padding-top: 60px;
+	padding-top: 5%;
         }
 .otziv1 h2{
 	text-transform: uppercase;
     text-align: center;
 	margin-top: 20px;
-	padding-bottom: 34px;
+	padding-bottom: 3%;
 	font-size: 45px;
 	font-weight: bold;
 	background: url(../img/cherta.png) 50% 310%/10% 70% no-repeat; 
@@ -422,12 +446,11 @@ nav{
 	font-size: 14px;
         }
 .otziv3{
-    margin-top: 54px;
+    margin-top: 3%;
         }
 .kont{
-    background:url(/img/fon_kontakt.png) center/cover no-repeat;
+    background: url(/img/fon_kontakt_1.png) center/cover no-repeat fixed;
     color:#F0F0F0;
-	height: 811px;
         }
 .kont1 h2{
 	text-transform: uppercase;
@@ -442,24 +465,21 @@ nav{
 	animation: comming 2s ease;
 }
 .kont1 p{
-	margin: 31px 0px 48px 0px;/*верхнего, правого, нижнего и левого*/
+	padding: 2% 0% 5% 0px;/*верхнего, правого, нижнего и левого*/
 	font-size: 14px;
 	text-align: center;
 }
 .kont2{
-    margin: 91px 458px 103px 443px; /*верхнего, правого, нижнего и левого*/
+    padding: 91px 0px 103px 0px; /*верхнего, правого, нижнего и левого*/
 	text-align: center;    
         }
 .kont3{
-    margin: 0px 38px 0px 39px;/*верхнего, правого, нижнего и левого*/
-	padding: 0;
+    padding: 0px 38px 0px 39px;/*верхнего, правого, нижнего и левого*/
 	text-align: center;
-	display: inline-block;
-	width: 17%
+	display: inline-block
         }
 .kont3 img{
 	margin-bottom: 13px;
-	padding: 0;
 }
 .kont3 p{
 	font-size: 12px;
@@ -470,7 +490,7 @@ nav{
 .kont4 h2{
 	text-transform: uppercase;
 	font-size: 20px;
-	margin-bottom: 10px;
+	padding-bottom: 10px;
 }
 .kont5{  
     text-align: center;
@@ -483,11 +503,9 @@ nav{
 	width: 708px;
 }
 .kont6{
-	height: 40px;
 	text-align: center;
 	border: 2px solid #F0F0F0;
 	border-radius: 5px;
-	padding: 0;
 	background: none;
 	color: #F0F0F0;
 	font-size: 14px;
@@ -528,7 +546,7 @@ nav{
 	}
 	to{
 		opacity: 1;
-		margin-left: 404px;
+		margin-left: 0;
 	}
 }
 @keyframes col2{

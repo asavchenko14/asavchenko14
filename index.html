@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
     
 </head>
 <body>
     <header>
          <nav>
-             <div class="logo">Андрей Савченко</div>
-             <div class="menu">
+            <div class="container">
+            	<div class="row">
+            	<div class="col-xxl-2 col-lg-3 col-7">
+            		<div class="logo">Андрей Савченко</div>
+            		</div>
+            <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
+                <div class="menu">
                  <ul class="menu">
                      <li class="menu_tu"><a href="">Обо мне</a></li>
                      <li class="menu_tu"><a href="">Услуги</a></li>
@@ -21,27 +27,55 @@
                      <li class="menu_tu"><a href="">Контакты</a></li>
                  </ul>
              </div>
+             </div>
+             <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+ 			<div class="dropdown">
+  <a class="btn btn-outline-secondary-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Навигация</a>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    	<li class="dropdown-item"><a href="">Обо мне</a></li>
+   		<li class="dropdown-item"><a href="">Услуги</a></li>
+    	<li class="dropdown-item"><a href="">Кейсы</a></li>
+    	<li class="dropdown-item"><a href="">Прайс</a></li>
+    	<li class="dropdown-item"><a href="">Отзывы</a></li>
+    	<li class="dropdown-item"><a href="">Контакты</a></li>
+  				</ul>
+				</div>
+            	</div>
+				</div>
+            </div>             
          </nav>
     </header>
-   
-    <section class="title">
-       <div class="titles">
+    <section class="main">
+      <div class="container h-100">
+      	<div class="row align-items-center h-100">
+      		<div class="col-lg-6 mt-5 pt-5">
+      		<div class="title mt-5">
         <h1>Привет<br>Я Андрей Савченко</h1>
         <h4>Фулл стек веб-разработчик</h4>
         <input type="button" value="Обо мне">
         <input type="button" value="Мои работы">
-        </div>
+        </div>	
+      		</div>
+      	</div>
+      </div>
+       
     </section>
-	<section class="ya">
+	<section>
+	<div class="container">
+	<div class=" col-12 ya">
 		<h2>Обо мне</h2>
-       <img src="/img/fotka_obo_mne.png" alt="">
+       <img class="" src="/img/fotka_obo_mne.png" alt="">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quaerat, eius non. Suscipit laboriosam vero porro rerum optio eum sint cumque vel assumenda, officiis illum beatae hic nobis aspernatur explicabo!</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quaerat, eius non. Suscipit laboriosam vero porro rerum optio eum sint cumque vel assumenda, officiis illum beatae hic nobis aspernatur explicabo!</p>
         <input type="button" value="Скачать резюме">
+        </div>
+        </div>
 	</section>
     <section class="col">
+        <div class="container">
+         <div>
           <h2>Что я уменю</h2>
-          <div class="col1">  
+          <div class="col-12 my-xxl-5 d-flex col1">  
         <div class="col2">
           <img src="/img/nout.png" alt="ноут">
            <h4>Веб дизайн</h4>
@@ -63,30 +97,38 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, ratione.</p>
         </div>
          </div>
+         </div>
+         </div>
     </section>
-    <section class="kay">
-        <div class="kay1">
+    <section >
+       <div class="container">
+       <div class="col-12 my-xxl-5 kay">
+        <div class=" col-12 kay1">
             <h2>Кейсы</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam consequatur, hic, eos nemo dolorem labore sed. Sint ducimus minima, possimus eum excepturi culpa in eveniet. Eos veritatis iusto cum, non.</p>
             <img src="/img/fotka.png" alt="">
         </div>
-        <div class="kay2">
-        <div class="kay3">
+        <div class="col-2 kay3">
+        <div>
             <h4>CLIENT</h4>
             <span>Какая-то информация!!!</span>
         </div>
-        <div class="kay3">
+        <div>
             <h4>WEBSITE</h4>
             <span>http:somedomain.com</span><br>
             <input type="button" value="VISIT LIVE SITE">
         </div>
         </div>
-        <div class="projekt">
-            <h3>Название проекта</h3>
+        <div class="col-10 projekt">
+            <h4>Название проекта</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, dolore possimus temporibus in blanditiis illum explicabo reprehenderit aspernatur tempore quo! Dicta earum perferendis, placeat laudantium quam at similique tempore optio.</p>
         </div>
+          </div>
+           </div>
     </section>
     <section class="raschet">
+           <div class="container">
+           <div class="col-12 my-xxl-5 kay">
             <h2>Расчет стоимости</h2>
         <div class="ras1">
             <h3>Тип сайта</h3>
@@ -118,8 +160,12 @@
             <h3>Сроки<span class="ras3">0</span></h3>
             <h3>Стоимость<span class="ras4">0</span></h3>
         </div>
+        </div>
+        </div>
     </section>
     <section class="stat">
+           <div class="container">
+           <div class="col-12 my-xxl-5">
             <h2>Немного статистики</h2>
         <div class="stat1">
         <div class="stat2">
@@ -143,13 +189,17 @@
             <h4>Наград получено</h4>
         </div>
         </div>
+        </div>
+        </div>
         </section>
     <section class="otziv">
+       <div class="container">
+       <div class="col-12 my-xxl-5">
         <div class="otziv1">
         <h2>Отзывы</h2>
         <img src="/img/fotka_otziv.png" alt="">
         </div>
-        <div class="otziv2">
+         <div class="otziv2">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime praesentium nam quasi reiciendis, tempora nostrum quibusdam laborum alias, asperiores obcaecati!</p><br><br><br>
             <p><span style="font-weight: bold;">Михаил</span>, ГенДиректор ПАО "Газпром"</p>
         </div>
@@ -158,8 +208,12 @@
             <img src="/img/tochka2.png" alt="2">
             <img src="/img/tochka3.png" alt="3">
         </div>
+        </div>
+        </div>
     </section>
-   <div class="kont">
+      <section class="kont">
+       <div class="container">
+       <div class="col-12 my-xxl-5">
         <div class="kont1">
             <h2>Мои контакты</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, fuga.</p>
@@ -190,5 +244,8 @@
             </div>
         </div>
     </div>
+    </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
