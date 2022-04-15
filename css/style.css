@@ -196,7 +196,6 @@ nav{
 }
 .col{
 	background: url(../img/fon_ya.png) center/cover no-repeat fixed;
-	padding: 5% 0% 5% 0;
 }
 .col h2{
 	text-transform: uppercase;
@@ -211,9 +210,8 @@ nav{
 	animation: comming 2s ease;
 }
 .col1{
-	padding-top: 1%;
 	text-align: center;
-	display: inline-block;
+	padding-top: 2%;
 }
 .col2{
 	padding-left: 1%;
@@ -229,8 +227,8 @@ nav{
 	opacity: 0;
 }
 .col2 h4{
-	margin-top: 36px;
-	margin-bottom: 16px;
+	margin-top: 7%;
+	margin-bottom: 3%;
 	font-size: 20px;
 	color: #d58c41;
 	-webkit-animation: col2 1.2s ease forwards;
@@ -384,13 +382,9 @@ nav{
         }
 .stat1{
 	padding: 5% 0% 0% 0%; /*верхнего, правого, нижнего и левого*/
-	text-align: center;
 }
 .stat2{
-	margin: 0px 38px 0px 39px;/*верхнего, правого, нижнего и левого*/
 	text-align: center;
-	/*display: inline-block;
-	width: 16.5%;*/
 }
 .stat2 img{
 	margin-bottom: 34px;
