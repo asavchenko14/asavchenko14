@@ -150,6 +150,7 @@ nav{
 }
 .ya{
 	text-align: center;
+	padding: 12% 0% 12% 0; /*верхнего, правого, нижнего и левого*/
 }
 .ya h2{
 	text-transform: uppercase;
@@ -196,6 +197,7 @@ nav{
 }
 .col{
 	background: url(../img/fon_ya.png) center/cover no-repeat fixed;
+	padding: 12% 0% 12% 0; /*верхнего, правого, нижнего и левого*/
 }
 .col h2{
 	text-transform: uppercase;
@@ -246,7 +248,7 @@ nav{
 }
 .kay{
 	text-align: center;
-	display: inline-block;
+	padding: 12% 0% 12% 0; /*верхнего, правого, нижнего и левого*/
 	}
 .kay1 h2{
 	margin-top: 1%;
@@ -358,15 +360,13 @@ nav{
 }
 .ras3{
 	margin-left: 67%;
-	padding: 0;
 }
 .ras4{
 	margin-left: 63.5%;
-	padding: 0;
 }
 .stat{
 	background: url(../img/fon_stat.png) center/cover no-repeat fixed;
-	padding: 5% 0% 5% 0%; /*верхнего, правого, нижнего и левого*/
+	padding: 12% 0% 12% 0; /*верхнего, правого, нижнего и левого*/
         }
 .stat h2{
 	text-transform: uppercase;
@@ -416,7 +416,7 @@ nav{
 }
 .otziv{
 	text-align: center;
-	padding-top: 5%;
+	padding: 12% 0% 12% 0; /*верхнего, правого, нижнего и левого*/
         }
 .otziv1 h2{
 	text-transform: uppercase;
@@ -443,6 +443,7 @@ nav{
 .kont{
     background: url(/img/fon_kontakt_1.png) center/cover no-repeat fixed;
     color:#F0F0F0;
+	padding: 12% 0% 12% 0; /*верхнего, правого, нижнего и левого*/
         }
 .kont1 h2{
 	text-transform: uppercase;
@@ -488,6 +489,7 @@ nav{
     text-align: center;
         }
 .kont5 input{
+	padding-top: 1%;
 	height: 36px;
 	width: 354px;
 }
