@@ -388,14 +388,12 @@ nav{
 }
 .stat2{
 	margin: 0px 38px 0px 39px;/*верхнего, правого, нижнего и левого*/
-	padding: 0;
 	text-align: center;
-	display: inline-block;
-	width: 16.5%;
+	/*display: inline-block;
+	width: 16.5%;*/
 }
 .stat2 img{
 	margin-bottom: 34px;
-	padding: 0;
 	-webkit-animation: col2 1.2s ease forwards;
 	-o-animation: col2 1.2s ease forwards;
 	animation: col2 1.2s ease forwards;
