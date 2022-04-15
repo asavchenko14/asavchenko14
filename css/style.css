@@ -165,10 +165,6 @@ nav{
 }
 .ya img{
 	text-align: center;
-	height: 10%;
-	width: 25%;
-	padding-top: 2%;
-	padding-bottom: 2%;
 }
 .ya p{
 	color: #3f495a;
@@ -266,6 +262,9 @@ nav{
 	margin-top: 39px;
 	margin-bottom: 40px;
 }
+.kay1 img{
+	max-width: 100%;
+}
 .kay3{
 	padding-top: 10px;
 	float:left;
@@ -302,7 +301,6 @@ nav{
 	transform: scale(1.1);
 }
 .projekt{
-    margin-top: 0%;
         }
 .projekt h4{
 	text-align: start;
@@ -463,14 +461,13 @@ nav{
 	text-align: center;
 }
 .kont2{
-    padding: 91px 0px 103px 0px; /*верхнего, правого, нижнего и левого*/
+	
 	text-align: center;    
         }
 .kont3{
-    padding: 0px 38px 0px 39px;/*верхнего, правого, нижнего и левого*/
-	text-align: center;
-	display: inline-block
-        }
+	display: inline-block;
+	padding: 0% 1% 5% 1%; /*верхнего, правого, нижнего и левого*/ 
+}
 .kont3 img{
 	margin-bottom: 13px;
 }
@@ -494,7 +491,7 @@ nav{
 	width: 354px;
 }
 .kont5 textarea{
-	width: 708px;
+	max-width: 100%;
 }
 .kont6{
 	text-align: center;
@@ -514,6 +511,17 @@ nav{
 }
 .kont6:active{
 	transform: scale(1.1);
+}
+.kont8{
+	text-align: center;
+}
+.kont8 img{
+	padding: 0% 2.5% 0% 2.5%;/*верхнего, правого, нижнего и левого*/
+	text-transform: uppercase;
+	-webkit-animation: comming 1.7s ease forwards;
+	-o-animation: comming 1.7s ease forwards;
+	animation: comming 1.7s ease forwards;
+	opacity: 0;
 }
 @keyframes comming{
 	from{
