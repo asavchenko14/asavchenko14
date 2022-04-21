@@ -318,6 +318,7 @@ nav{
 
 .raschet{
     background: url(../img/fon-raschet.jpg) center/cover no-repeat fixed;
+	padding-bottom: 1%;
 	
         }
 .raschet h2{
@@ -331,7 +332,7 @@ nav{
 	animation: comming 2s ease;
 }
 .ras1{
-    margin: 2.5% 2.5% 2.5% 2.5%; /*верхнего, правого, нижнего и левого*/
+    margin: 2.5% 0% 2.5% 0%; /*верхнего, правого, нижнего и левого*/
         }
 .ras1 h3{
 	color:#303030;
@@ -340,27 +341,48 @@ nav{
 	padding-bottom: 10px;
         }
 .ras1 select{
-	text-align: start;
-	font-size: 14px;
+	text-align: center;
+	font-size: 18px;
 	color: #727272;
 	background: #eeeeee;
-	margin: 0;
-	padding: 1% 67% 1% 0%;
+	padding: 1% 0% 1% 0%;
 }
 .ras2{
-    margin: 2.5% 2.5% 2.5% 2.5%;
+    margin: 2.5% 0% 2.5% 0%;
         }
 .ras2 h3{
-	color:#000000;
-	font-size: 20px;
-	padding-bottom: 10px;
-	margin: 0;
+	display: contents;
 }
-.ras3{
-	margin-left: 67%;
+.ras2 h5{
+	
 }
-.ras4{
-	margin-left: 63.5%;
+.ras2 input{
+	height: 40px;
+	text-align: center;
+	border: 2px solid #3f495a;
+	border-radius: 5px;
+	padding: 0px 56px;
+	background: none;
+	color: #3f495a;
+	font-size: 13px;
+	margin-top: 2%;
+	transition: all 0.2s;
+	transform: scale(1);
+}
+.ras2 input:hover{
+	background: #344051;
+	color: white;
+}
+.ras2 input:active{
+	transform: scale(1.1);
+}
+.ras3 h3{
+	margin-top: 1%;
+	margin-bottom: 0.5%;
+}
+.ras3 h5{
+	margin-top: 1%;
+	margin-bottom: 0.5%;
 }
 .stat{
 	background: url(../img/fon_stat.png) center/cover no-repeat fixed;
