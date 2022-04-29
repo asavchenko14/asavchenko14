@@ -20,12 +20,12 @@
             <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
                 <div class="menu">
                  <ul class="menu">
-                     <li class="menu_tu"><a href="">Обо мне</a></li>
-                     <li class="menu_tu"><a href="">Услуги</a></li>
-                     <li class="menu_tu"><a href="">Кейсы</a></li>
-                     <li class="menu_tu"><a href="">Прайс</a></li>
-                     <li class="menu_tu"><a href="">Отзывы</a></li>
-                     <li class="menu_tu"><a href="">Контакты</a></li>
+                     <li class="menu_tu"><a href="#ya">Обо мне</a></li>
+                     <li class="menu_tu"><a href="#col">Услуги</a></li>
+                     <li class="menu_tu"><a href="#kay">Кейсы</a></li>
+                     <li class="menu_tu"><a href="#ras">Прайс</a></li>
+                     <li class="menu_tu"><a href="#otziv">Отзывы</a></li>
+                     <li class="menu_tu"><a href="#kont">Контакты</a></li>
                  </ul>
              </div>
              </div>
@@ -33,10 +33,10 @@
  			<div class="dropdown">
   <a class="btn btn-outline-secondary-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Навигация</a>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    	<li class="dropdown-item"><a href="">Обо мне</a></li>
-   		<li class="dropdown-item"><a href="">Услуги</a></li>
-    	<li class="dropdown-item"><a href="">Кейсы</a></li>
-    	<li class="dropdown-item"><a href="">Прайс</a></li>
+    	<li class="dropdown-item"><a href="#ya">Обо мне</a></li>
+   		<li class="dropdown-item"><a href="#col">Услуги</a></li>
+    	<li class="dropdown-item"><a href="#kay">Кейсы</a></li>
+    	<li class="dropdown-item"><a href="#ras">Прайс</a></li>
     	<li class="dropdown-item"><a href="">Отзывы</a></li>
     	<li class="dropdown-item"><a href="">Контакты</a></li>
   				</ul>
@@ -61,7 +61,7 @@
       </div>
        
     </section>
-	<section>
+	<section id="ya">
 	<div class="container">
 	<div class="row d-flex flex-column align-items-center ya">
 		<h2>Обо мне</h2>
@@ -72,7 +72,7 @@
         </div>
         </div>
 	</section>
-    <section class="col">
+    <section class="col" id="col">
         <div class="container">
          <div class="row">
           <h2>Что я уменю</h2>
@@ -101,7 +101,7 @@
          </div>
          </div>
     </section>
-    <section >
+    <section id="kay">
        <div class="container">
        <div class="row kay">
         <div class="kay1">
@@ -127,7 +127,7 @@
           </div>
            </div>
     </section>
-    <section class="raschet">
+    <section class="raschet" id="ras">
            <div class="container">
            <div class="row col-12 my-xxl-5">
             <h2>Расчет стоимости</h2>
@@ -153,7 +153,7 @@
         <div class="ras1">
             <h3>Адаптивность</h3>
            <select class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" name="adapt" id="adapt">
-                <option value="1">Адаптивный</option>
+                <option value="1">Адавтивный</option>
                 <option value="2">Только для PC</option>
                 <option value="3">Только для мобильных устройств</option>
             </select>
@@ -177,29 +177,29 @@
         <div class="row d-flex stat1">
         <div class=" col-12 col-sm-6 col-md-3 stat2">
             <img src="/img/smayl.png" alt="смайл">
-            <p>120</p>
+            <p id="stat1">120</p>
             <h4>Счастливых клиентов</h4>
         </div>
         <div class=" col-12 col-sm-6 col-md-3 stat2">
             <img src="img/skobki.png" alt="скобки">
-            <p>4.600</p>
+            <p id="stat2">4600</p>
             <h4>Часов работы</h4>
         </div>
         <div class="col-12 col-sm-6 col-md-3 stat2">
             <img src="/img/galochka.png" alt="галочка">
-            <p>340</p>
+            <p id="stat3">340</p>
             <h4>Проектов завершено</h4>
         </div>
         <div class="col-12 col-sm-6 col-md-3 stat2">
             <img src="/img/kubok.png" alt="кубок">
-            <p>23</p>
+            <p id="stat4">23</p>
             <h4>Наград получено</h4>
         </div>
         </div>
         </div>
         </div>
         </section>
-    <section class="otziv">
+    <section class="otziv" id="otziv">
        <div class="container">
        <div class="col-12 my-xxl-5">
         <div class="otziv1">
@@ -218,7 +218,7 @@
         </div>
         </div>
     </section>
-      <section class="kont">
+      <section class="kont" id="kont">
        <div class="container">
        <div class="row">
         <div class="kont1">
@@ -265,6 +265,10 @@
     	</div>
     </div>
     </section>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.spincrement.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <!--<script src="js/index.js"></script>
+    <script src="js/calc.js"></script>-->
 </body>
 </html>

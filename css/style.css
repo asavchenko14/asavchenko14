@@ -1,3 +1,6 @@
+html{
+	scroll-behavior: smooth;
+}
 body{
     font-family: Arial, sans-serif;
         }
@@ -387,6 +390,7 @@ nav{
 .stat{
 	background: url(../img/fon_stat.png) center/cover no-repeat fixed;
 	padding: 12% 0% 12% 0; /*верхнего, правого, нижнего и левого*/
+	transform: translateY(-1);
         }
 .stat h2{
 	text-transform: uppercase;
