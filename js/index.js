@@ -30,7 +30,7 @@ $("#stat1").html(Math.ceil(val)); // Блок, где необходимо сд�
 }
 });
 }
-};
+});
 	function() {
 let scrollEvent = ($(window).scrollTop() > (target_block2.position().top - $(window).height()));
 if(scrollEvent && blockStatus) {
@@ -43,7 +43,7 @@ $("#stat2").html(Math.ceil(val)); // Блок, где необходимо сд�
 }
 });
 }
-};
+});
 	
 function() {
 let scrollEvent = ($(window).scrollTop() > (target_block3.position().top - $(window).height()));
@@ -57,7 +57,7 @@ $("#stat3").html(Math.ceil(val)); // Блок, где необходимо сд�
 }
 });
 }
-};
+});
 	
 function() {
 let scrollEvent = ($(window).scrollTop() > (target_block4.position().top - $(window).height()));
