@@ -4,7 +4,7 @@ $(document).ready(function(){
 	let height = $(window).innerHeight(); //высота окна браузера
 	console.log(countBlockTop);
 	console.log(height);
-		$(window).scroll( function (){
+		$(window).on("scroll", function (){
 		 let top = $(window).scrollTop();	
 			console.log(top);
 			if(show && (countBlockTop < (top + height))){ //логика и должны быть два элемента true
