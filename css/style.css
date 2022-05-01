@@ -250,8 +250,85 @@ nav{
 }
 .kay{
 	text-align: center;
-	padding: 12% 0% 12% 0; /*верхнего, правого, нижнего и левого*/
+	padding: 5% 0% 0% 0; /*верхнего, правого, нижнего и левого*/
 	}
+#viewport {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+    width: calc(100% * 5);
+	height: auto;
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 0;
+}
+
+#viewSlider {
+    width: calc(30px * 5);
+    justify-content: space-between;
+}
+
+.viewSlide {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
+.prev{
+	height: 40px;
+	text-align: center;
+	border: 2px solid #3f495a;
+	border-radius: 5px;
+	padding: 0px 20px;
+	background: none;
+	color: #3f495a;
+	font-size: 13px;
+	transition: all 0.2s;
+	transform: scale(1);
+}
+.prev:hover{
+	background: #344051;
+	color: white;
+}
+.prev:active{
+	transform: scale(1.1);
+}
+.next{
+	height: 40px;
+	text-align: center;
+	border: 2px solid #3f495a;
+	border-radius: 5px;
+	padding: 0px 20px;
+	background: none;
+	color: #3f495a;
+	font-size: 13px;
+	margin-top: 1%;
+	transition: all 0.2s;
+	transform: scale(1);
+}
+.next:hover{
+	background: #344051;
+	color: white;
+}
+.next:active{
+	transform: scale(1.1);
+}
 .kay1 h2{
 	margin-top: 1%;
 	padding-bottom: 2%;
@@ -268,10 +345,8 @@ nav{
 	margin-top: 39px;
 	margin-bottom: 40px;
 }
-.kay1 img{
-	max-width: 100%;
-}
 .kay3{
+	
 	padding-top: 10px;
 	float:left;
 }
@@ -307,6 +382,7 @@ nav{
 	transform: scale(1.1);
 }
 .projekt{
+	
         }
 .projekt h4{
 	text-align: start;
