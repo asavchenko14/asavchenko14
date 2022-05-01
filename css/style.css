@@ -64,6 +64,9 @@ nav{
 	color: #e88604;
 	
 }
+.a.active{
+	color: #e88604;
+}
 .menu li a:active{
 	transform: scale(1.1);
 }
