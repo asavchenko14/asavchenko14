@@ -1,8 +1,9 @@
 $(document).ready(function(){
+//начало блока обработки меню.
 	let sections = $('section'), nav = $('nav'), nav_height = nav.outerHeight();
 
 $(window).on('scroll', function () {
-  let cur_pos = $(this).scrollTop();
+  let cur_pos = $(this).scrollTop() - 1 ;
   
   sections.each(function() {
     let top = $(this).offset().top - nav_height, bottom = top + $(this).outerHeight();
@@ -40,13 +41,8 @@ nav.find('.a').on('click', function () {
 					step: function (now) {
 						$(this).text(Math.ceil(now));
 					}
-				
-				/*$('.stat2 p').spincrement({ //вызов плагина с параметрами 
-					from: 1, //начинать с 1
-					duration: 4000, //задержка счетчика*/
-					
 				});
-					});
+			});
 			}
 		});
 });

@@ -199,7 +199,7 @@ nav{
 }
 .col{
 	background: url(../img/fon_ya.png) center/cover no-repeat fixed;
-	padding: 12% 0% 12% 0; /*верхнего, правого, нижнего и левого*/
+	padding: 21% 0% 21% 0; /*верхнего, правого, нижнего и левого*/
 }
 .col h2{
 	text-transform: uppercase;
